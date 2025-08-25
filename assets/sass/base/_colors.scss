@@ -1,0 +1,41 @@
+
+
+// colors
+// $primary: #0087F6;
+// $primary: #377AFF;
+// $primary: #0FAD64;
+$primary: #15629C;
+// $primary: #065FD4;
+// $secondary: #87B39C;
+$secondary: #59B464;
+// $dark: #2a2b2b;
+// $dark: #34322E;
+$dark: #282E33;
+$warning: #DABA32;
+$info: #53AAE8;
+$danger: #ED302B;
+// $danger: #BA4A47;
+$white: #ffffff;
+$light: #F8F9FA;
+
+$primary-light: lighten($color: $primary, $amount: 44);
+// $primary-light: #96C7F9;
+
+
+// typhography color 
+$heading-color: $dark;
+$sub-heading-color: $dark;
+$title-color: $dark;
+$sub-title-color: $dark;
+$text-color: lighten($color: $dark, $amount: 40);
+$small-text-color: $dark;
+
+// background color 
+$bg-primary: $primary;
+$bg-white: $white;
+$bg-light: $light;
+$bg-deep: #F3F3F3;
+$bg-dark: $dark;
+
+
+

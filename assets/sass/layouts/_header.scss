@@ -1,0 +1,137 @@
+@use '../base/index' as *;
+@use '../partials/variables' as *;
+
+
+// .scroll-container {
+//     width: 100%;
+//     overflow: hidden;
+//     white-space: nowrap;
+//     max-width: 56rem;
+//     border-left: 4px solid $dark;
+// }
+
+// .scroll-text {
+//     display: inline-block;
+//     padding-left: 100%;
+//     animation: scroll-left 15s linear infinite;
+//     color: $white;
+// }
+
+// @keyframes scroll-left {
+//     0% {
+//     transform: translateX(0%);
+//     }
+//     100% {
+//     transform: translateX(-100%);
+//     }
+// }
+
+
+// .scroll-container {
+//     width: 100%;
+//     overflow: hidden;
+//     white-space: nowrap;
+//     max-width: 56rem;
+//     border-left: 4px solid $dark;
+//     position: relative;
+// }
+
+// .scroll-text {
+//     display: inline-block;
+//     padding-left: 100%;
+//     color: $white;
+//     animation: scroll-left linear infinite;
+//     animation-duration: calc(100ch * 0.2s); // dynamically scales with text length
+// }
+
+.top-info{
+    color: $white;
+    background-color: $bg-primary;
+    font-size: 1rem;
+}
+
+
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 56rem;
+    border-left: 4px solid $secondary;
+}
+
+.scroll-text {
+  display: inline-block;
+  animation: scroll-left 20s linear infinite;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+// navbar
+.navbar{
+    padding: .875rem 0;
+    box-shadow: $shadow;
+    .header-logo{
+        height: 3.2rem;
+        width: auto;
+        object-fit: contain;
+    }
+    .navbar-toggler{
+
+        &:focus{
+        box-shadow: none;
+        }
+        .navbar-toggler-icon{
+            font-size: 1rem;
+        }
+    }
+
+    // search-form 
+    .search-form{
+        // width: 34rem;
+        padding-left: 10rem ;
+        .search-btn i{
+            color: $secondary;
+        }
+    }
+
+    // offcanvas 
+    .offcanvas{
+        .btn-close{
+            font-size: .875rem;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+
+        .navbar-nav{
+            .nav-item{
+                .nav-link.active{
+                    color: $primary;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+// .search-form {
+//     padding-top: var(--bs-navbar-brand-padding-y);
+//     padding-bottom: var(--bs-navbar-brand-padding-y);
+//     margin-right: var(--bs-navbar-brand-margin-end);
+//     font-size: var(--bs-navbar-brand-font-size);
+//     // color: var(--bs-navbar-brand-color);
+//     // text-decoration: none;
+//     white-space: nowrap;
+// }
