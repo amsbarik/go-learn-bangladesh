@@ -57,7 +57,30 @@
 
 
 
+.about-us{
 
+    .about-img{
+        width: 100%;
+        height: 640px;
+        object-fit: contain;
+    }
+
+    .about-card{
+        background-color: $bg-deep;
+        padding: 1rem 1.4rem;
+        border-radius: 8px;
+        height: 100%;
+        // justify-items: center;
+        .about-icon{
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+        .info-wrap{
+            margin-left: 16px;
+        }
+    }
+}
 
 
 
