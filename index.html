@@ -125,7 +125,7 @@
         <!-- top-hero start  -->
         <section class="top-hero margin-top">
             <div class="top-hero-wrap">
-                <div id="heroCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -160,50 +160,112 @@
         <!-- top-hero end -->
 
 
-        <section class="top-link section-padding">
+        <section class="top-link section-padding pt-3 pt-md-4">
             <div class="container">
                 <div class="row g-3 g-md-4 row-cols-1 row-cols-md-3">
                     <div class="col">
                         <div class="card">
-                            <img src="assets/img/university.png" class="card-img mx-auto d-block" alt="...">
-                            <a href="student_assessment.html"><h5 class="card-title mt-3 text-center">Find University</h5></a>
+                            <a href="student_assessment.html">
+                                <img src="assets/img/training-session.png" class="card-img mx-auto d-block" alt="...">
+                                <h5 class="card-title mt-3 text-center">Workshop</h5>
+                            </a>
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="card flex-grow-1">
-                            <img src="assets/img/calendar.png" class="card-img mx-auto d-block" alt="...">
-                            <a href="#"><h5 class="card-title mt-3 text-center">Book a Appointment</h5></a>
+                            <a href="#">
+                                <img src="assets/img/event.png" class="card-img mx-auto d-block" alt="...">
+                                <h5 class="card-title mt-3 text-center">Events</h5>
+                            </a>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="assets/img/scholarship.png" class="card-img mx-auto d-block" alt="...">
-                            <a href="#"> <h5 class="card-title mt-3 text-center">Apply Scholarship</h5></a>
+                            <a href="#"> 
+                                <img src="assets/img/learn.png" class="card-img mx-auto d-block" alt="...">
+                                <h5 class="card-title mt-3 text-center">Explore Courses</h5>
+                            </a>
                         </div>
                     </div>
+                </div>
+
+                <!-- banner -->
+                <div class="banner pt-3 pt-md-4">
+                    <a href="#"><img src="assets/img/banner1.jpg" alt=""></a>
                 </div>
             </div>
         </section>
 
-        <div class="banner container">
-            <a href="#"><img src="assets/img/banner1.jpg" alt=""></a>
-        </div>
+        
 
         <!-- courses start -->
-        <section class="courses section-padding">
+        <section class="courses bg-light section-padding">
             <div class="container">
-                <div class="row row-cols-1 row-cols-md-4">
+                <div class="section-top text-center">
+                    <h5 class="section-heading">Popular Courses</h5>
+                    <h1 class="section-title">Choose Our Top Courses</h1>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tempora officiis odit distinctio iste sed?</p>
+                </div>
+                <div class="row g-3 g-md-4 row-cols-1 row-cols-md-3">
+
+                    <!-- course-card  -->
                     <div class="col">
-                        <div class="card" >
-                            <img src="assets/img/course/course1.jpg" class="card-img-top" alt="...">
+                        <div class="course-card" >
+                            <div class="img-wrap"><img src="assets/img/course/course1.jpg" class="card-img-top " alt="..."></div>
                             <div class="card-body">
-                                <h5 class="card-title">Digital Marketing</h5>
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> -->
+                                <h2><a href="#" class="card-title link">Digital Marketing</a></h2>
+                                <p class="card-text mt-2">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
                                 <div>
                                     <div class="price d-flex">
-                                        <h5>16400Tk</h5>
-                                        <p class="ms-2 text-decoration-line-through text-danger">
+                                        <h5 class="sell-price">16,400Tk</h5>
+                                        <p class="ms-2 text-decoration-line-through regular-price">
+                                            <!-- <i class="fa-solid fa-bangladeshi-taka-sign"></i> -->
+                                            24800Tk</p>
+                                        <div class="rating ms-auto">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <a href="#" class="btn btn-primary">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- course-card  -->
+                    <div class="col">
+                        <div class="course-card" >
+                            <div class="img-wrap"><img src="assets/img/course/course-2.jpg" class="card-img-top " alt="..."></div>
+                            <div class="card-body">
+                                <h2><a href="#" class="card-title link">Motion Graphics</a></h2>
+                                <p class="card-text mt-2">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                <div>
+                                    <div class="price d-flex">
+                                        <h5 class="sell-price">16,400Tk</h5>
+                                        <p class="ms-2 text-decoration-line-through regular-price">
+                                            <!-- <i class="fa-solid fa-bangladeshi-taka-sign"></i> -->
+                                            24800Tk</p>
+                                        <div class="rating ms-auto">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <a href="#" class="btn btn-primary">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- course-card  -->
+                    <div class="col">
+                        <div class="course-card" >
+                            <div class="img-wrap"><img src="assets/img/course/course-3.jpg" class="card-img-top " alt="..."></div>
+                            <div class="card-body">
+                                <h2><a href="#" class="card-title link">Business Development</a></h2>
+                                <p class="card-text mt-2">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                <div>
+                                    <div class="price d-flex">
+                                        <h5 class="sell-price">16,400Tk</h5>
+                                        <p class="ms-2 text-decoration-line-through regular-price">
                                             <!-- <i class="fa-solid fa-bangladeshi-taka-sign"></i> -->
                                             24800Tk</p>
                                         <div class="rating ms-auto">

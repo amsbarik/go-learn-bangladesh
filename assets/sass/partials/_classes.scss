@@ -19,7 +19,7 @@
 
 .btn-sm{
     font-size: .84rem;
-    padding: 6px 16px 4px 16px;
+    padding: 8px 16px;
     border-radius: 4px;
 }
 
@@ -30,26 +30,32 @@
 }
 
 .btn-primary {
-    background: linear-gradient(90deg, $primary, lighten($primary, 16));
+    background: linear-gradient(0deg, $primary, lighten($primary, 16));
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
     &::before {
         content: '';
         position: absolute;
-        top: 0;
-        left: 50%;
-        width: 0;
-        height: 100%;
-        background: linear-gradient(90deg, $secondary, lighten($secondary, 16));
+        left: 0;
+        bottom: 0; // start at bottom
+        width: 100%;
+        height: 0; // start collapsed
+        background: linear-gradient(0deg, $secondary, lighten($secondary, 16));
         z-index: -1;
-        transition: width 0.6s ease, left 0.6s ease; // Animation for box-out effect
+        transition: height 0.6s ease; // animate height only
     }
+
     &:hover {
         color: $white;
         &::before {
-            width: 200%; // Double the width to ensure full coverage
-            left: -50%; // Move left to start the expansion from center
+            height: 100%; // expand full height
+            bottom: 0; // keep anchored to bottom
         }
     }
 }
+
 
 .btn-dark{
     background: $dark;
@@ -148,16 +154,26 @@
 }
 
 .link{
-    color: $primary;
-    font-size: 0.875rem;
+    transition: color .4s ease;
     &:hover{
-        color: darken($color: $primary, $amount: 10)
+        text-decoration: underline;
+        color: $primary;
     }
 }
 
 .link-light{
     color: darken($color: $light, $amount: 40 ) !important;
 }
+
+.rating i {
+    background: linear-gradient(90deg, $secondary 0%, lighten($secondary, 14) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent; // fallback
+    font-size: .85rem;
+}
+
 
 // heading class 
 .heading{
@@ -181,24 +197,27 @@
     padding-top: 5.4rem;
 }
 .margin-top{
-    margin-top: 5.4rem;
+    margin-top: 4.64rem;
 }
 
 .section-padding{
     padding: 4rem 0;
 }
-.section-heading{
-    font-weight: $semibold;
-    margin-bottom: 2rem;
-    .heading-style{
-        .dot{
-            background: $gradient-secondary;
-            width: 8px;
-            height: 8px;
-            border-radius: 100%;
-            margin: 5px 3px;
-        }
-        .sub-heading{margin-top: 8px;}
+
+
+
+
+.section-top{
+    margin-bottom: 3rem;
+    padding: 0 15rem;
+    .section-heading{
+        font-weight: $semibold;
+        margin-bottom: 1.5rem;
+        color: $secondary;
+    }
+    .section-title{
+        color: $dark;
+        margin-bottom: 1rem;
     }
 }
 
@@ -217,7 +236,7 @@
 .card-title{
     font-weight: $semibold;
     color: $dark;
-    font-size: .875rem;
+    font-size: 1.2rem;
 }
 
 

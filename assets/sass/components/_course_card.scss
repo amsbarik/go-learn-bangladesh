@@ -1,0 +1,42 @@
+@use '../base/index' as *;
+@use '../partials/variables' as *;
+
+.course-card{
+    border-radius: 10px;
+    background-color: $bg-white;
+    box-shadow: $shadow-light;
+    padding: 10px;
+    transition: box-shadow .4s ease;
+    .card-img-top {
+        border-radius: 10px;
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .card-body{
+        margin-top: 8px;
+        padding: 16px;
+
+        .card-title{
+            transition: color .4s ease;
+            &:hover{
+                text-decoration: underline;
+                color: $primary;
+            }
+        }
+
+        .price{
+            margin: 16px 0;
+            .sell-price{
+                color: $dark;
+            }
+        }
+        .regular-price{color: $secondary; font-size: .875rem; margin-top: 3px;}
+    }
+
+    &:hover{
+        box-shadow: $shadow;
+    }
+}
+
