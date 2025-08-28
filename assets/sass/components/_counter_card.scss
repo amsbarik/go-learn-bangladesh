@@ -1,0 +1,13 @@
+@use '../base/index' as *;
+@use '../partials/variables' as *;
+
+.counter-card{
+    text-align: center;
+    border: 1px dashed white;
+    color: white;
+    padding: 1.5rem;
+    .counter-icon{
+        width: 3rem;
+        margin-bottom: 1rem;
+    }
+}

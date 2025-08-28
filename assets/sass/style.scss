@@ -84,6 +84,14 @@
 
 
 
+.service-counter{
+    background-color: lighten($color: $secondary, $amount: 20);
+    .row{
+        padding: 0 5rem;
+    }
+}
+
+
 
 
 .testimonial{
