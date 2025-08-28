@@ -1,0 +1,10 @@
+@use '../base/index' as *;
+@use '../partials/variables' as *;
+
+
+.marketplace-card {
+    background-color: $bg-white;
+    &:hover{
+        box-shadow: $shadow-lg;
+    }
+}
