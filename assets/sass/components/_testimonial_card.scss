@@ -6,11 +6,14 @@
 .testimonial-card{
     
     height: 100%;
-    box-shadow: $shadow-sm;
+    // box-shadow: $shadow-sm;
+    box-shadow: $shadow-lg;
     background-color: $bg-white;
-    transition: .4s;
+    transition: box-shadow .4s ease;
     &:hover{
-        box-shadow: $shadow-lg;
+        // box-shadow: $shadow-lg;
+        box-shadow: $shadow-sm;
+
     }
     
     .card-top{

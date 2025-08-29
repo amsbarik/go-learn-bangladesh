@@ -1,0 +1,39 @@
+@use '../base/index' as *;
+@use '../partials/variables' as *;
+
+
+.event-card {
+    height: 100%;
+    box-shadow: $shadow-lg;
+    border: none;
+    transition: box-shadow .4 ease;
+    
+
+    .img-wrap{
+        padding: 10px;
+        .card-img-top{
+            border-radius: 8px;
+            height: 220px;
+            object-fit: cover;
+        }
+    }
+    .card-body{
+        padding: 1.5rem;
+        padding-top: 1rem;
+        .regular-price{color: $secondary;}
+        .sell-price{
+            color: $primary;
+        }
+
+        .btn-primary{
+            width: 100%; 
+            // background: none;
+            // border: 1px solid $primary;
+            // color: $primary;
+        }
+    }
+
+    &:hover{
+        box-shadow: none;
+    }
+}
