@@ -1,0 +1,40 @@
+@use '../base/index' as *;
+@use '../partials/variables' as *;
+
+
+
+.blog-card{
+    box-shadow: $shadow-lg;
+    height: 100%;
+    transition: box-shadow .4s ease;
+    &:hover{
+        box-shadow: none;
+    }
+
+    .card-img-top{
+
+        height: 226px;
+        object-fit: cover;
+    }
+    .published{
+        font-size: 12px;
+        margin-top: 2px;
+    }
+
+
+    .blog-tag{
+        // border: 1px solid $secondary;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 4px 10px;
+        background-color: lighten($color: $secondary, $amount: 24);
+        color: $dark;
+    }
+    .card-title{
+        margin-top: 12px;
+        font-size: 15px;
+    }
+    .link{
+        font-size: 13px;
+    }
+}
