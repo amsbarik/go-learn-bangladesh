@@ -1,0 +1,45 @@
+
+@use '../base/index' as *;
+@use '../partials/variables' as *;
+
+
+.about{
+    .section-heading{
+        margin-top: 2.4rem;
+    }
+    .text{
+        margin-bottom: 1rem;
+    }
+    .card-title{
+        margin-bottom: .5rem;
+    }
+
+    .message-wrap{
+        margin-top: 8rem;
+        // position: relative;
+
+        .img-wrap{
+            margin-top: -7rem;
+            background-color: $secondary;
+            padding: .5rem;
+            // height: 400px;
+            width: 360px;
+            transform: rotate(3deg);
+
+            .owner-img, .text-wrap{
+                transform: rotate(-3deg);
+            }
+
+            .owner-img{
+                height: 400px;
+                width: auto;
+            }
+
+            // .text-wrap{
+            //     margin-top: 1rem;
+            //     color: $white;
+            // }
+        }
+    }
+    
+}
