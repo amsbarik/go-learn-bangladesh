@@ -10,32 +10,45 @@
 // }
 
 
-.course-info-top{
+.course-info-top {
     padding: 84px 0;
 
-    .price{
+    .price {
         font-size: 24px;
         color: $white;
     }
-    .regular-price{color: $secondary;}
-    .card-text{
+
+    .regular-price {
+        color: $secondary;
+    }
+
+    .card-text {
         color: $light;
         font-weight: 300;
     }
-    .btn-outline-secondary:hover{background-color: $secondary;}
-    .btn-primary{background-color: $secondary !important;}
-    .course-info-card{
 
-        .property{
+    .btn-outline-secondary:hover {
+        background-color: $secondary;
+    }
+
+    .btn-primary {
+        background-color: $secondary !important;
+    }
+
+    .course-info-card {
+
+        .property {
             font-size: 16px;
             margin-bottom: 4px;
         }
-        .value{
+
+        .value {
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 0px;
         }
-        .property2{
+
+        .property2 {
             font-size: 14px;
             color: $white;
         }
@@ -43,25 +56,19 @@
 }
 
 
-.accordion-button:focus{
+.accordion-button:focus {
     box-shadow: none !important;
 }
 
-// .course-info{
-
-    
 
 
-// }
+.course-curriculum {
+    .accordion {
+        .row {
+            .accordion-item {
 
-
-.course-curriculum{
-    .accordion{
-        .row{
-            .accordion-item{
-
-                .accordion-body{
-                    .class{
+                .accordion-body {
+                    .class {
                         margin-bottom: 16px;
                     }
                 }
@@ -72,20 +79,22 @@
 
 
 
-.tools-learn{
-    .row{
-        .tool-card{
+.tools-learn {
+    .row {
+        .tool-card {
             // background: #ddd;
             background-color: $bg-deep;
             padding: 8px 16px;
             border-radius: 4px;
-            .tool-icon{
+
+            .tool-icon {
                 width: 24px;
                 height: 24px;
                 object-fit: contain;
-                
+
             }
-            .title{
+
+            .title {
                 padding: 0px 10px 0 4px;
                 font-size: 16px;
                 font-weight: 600;
@@ -94,15 +103,16 @@
         }
     }
 
-    
-}
-  
 
-.course-features{
-    .row{
+}
+
+
+.course-features {
+    .row {
         display: flex;
         flex-wrap: wrap;
-        gap: 16px; /* Adjust spacing between columns */
+        gap: 16px;
+        /* Adjust spacing between columns */
 
         .feature-card {
             display: flex;
@@ -111,15 +121,18 @@
             padding: 8px 18px;
             text-align: center;
             border-radius: 8px;
-            width: auto; /* Automatically adjusts to content */
-            white-space: nowrap; /* Prevents text wrapping */
+            width: auto;
+            /* Automatically adjusts to content */
+            white-space: nowrap;
+            /* Prevents text wrapping */
 
-            .icons{
+            .icons {
                 width: 24px;
                 height: 24px;
                 object-fit: contain;
             }
-            .features{
+
+            .features {
                 font-size: 16px;
                 font-weight: 400;
                 color: $dark;
@@ -131,7 +144,9 @@
         $color-count: length($colors); // Get total colors count
 
         // Loop through feature-card elements and apply colors cyclically
-        @for $i from 1 through 20 { // Adjust range if you expect more cards
+        @for $i from 1 through 20 {
+
+            // Adjust range if you expect more cards
             .feature-card:nth-child(#{$i}) {
                 background: nth($colors, (($i - 1) % $color-count) + 1);
             }
@@ -142,56 +157,69 @@
 
 
 
-.career-oportunity{
+.career-oportunity {
+
     // background: $bg-color;
-    .who-learn{
+    .who-learn {
+
         // margin-top: 24px;
-        .card{
+        .card {
             padding: 16px;
             transition: .4s;
-            &:hover{
+
+            &:hover {
                 background-color: $secondary ;
-                .title{color: white;}
+
+                .title {
+                    color: white;
+                }
             }
-            .std-img{
+
+            .std-img {
                 border-radius: 100%;
                 width: 70px;
                 height: 70px;
                 object-fit: contain;
             }
-            .title{
+
+            .title {
                 margin-top: 10px;
                 margin-bottom: 0px;
             }
         }
     }
 
-    .career-row{
+    .career-row {
         // margin-top: 24px;
 
         display: flex;
         flex-wrap: wrap;
-        gap: 16px; /* Adjust spacing between columns */
+        gap: 16px;
+        /* Adjust spacing between columns */
 
         $colors: $color-v1 $color-v2 $color-v3 $color-v4; // Define your colors
         $color-count: length($colors); // Get total colors count
 
         // Loop through feature-card elements and apply colors cyclically
-        @for $i from 1 through 20 { // Adjust range if you expect more cards
+        @for $i from 1 through 20 {
+
+            // Adjust range if you expect more cards
             .career-card:nth-child(#{$i}) {
                 background: nth($colors, (($i - 1) % $color-count) + 1);
             }
         }
 
-        .career-card{
+        .career-card {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 8px 18px;
             text-align: center;
             // border-radius: 8px;
-            width: auto; /* Automatically adjusts to content */
-            white-space: nowrap; /* Prevents text wrapping */
+            width: auto;
+            /* Automatically adjusts to content */
+            white-space: nowrap;
+            /* Prevents text wrapping */
 
 
 
@@ -199,13 +227,14 @@
             border-radius: 4px;
             background: $secondary;
 
-            .career-icon{
+            .career-icon {
                 width: 30px;
                 height: 30px;
                 object-fit: contain;
                 border-radius: 4px;
             }
-            .title{
+
+            .title {
                 color: $secondary;
                 margin-bottom: 0px;
             }
@@ -213,9 +242,9 @@
     }
 }
 
-.faq{
-    .row{
-        .faq-img{
+.faq {
+    .row {
+        .faq-img {
             width: 100%;
             height: auto;
             object-fit: contain;
@@ -227,29 +256,108 @@
 
 
 @media (max-width: 1200px) {
-    .course-info-top{
-        .heading{
+    .course-info-top {
+        .heading {
             font-size: 28px;
         }
 
-        .price{
+        .price {
             font-size: 22px;
         }
-        .course-info-card{
-    
-            .property{
-                font-size: 15px;
-                // margin-bottom: 4px;
-            }
-            .value{
-                font-size: 17px;
-                // font-weight: 600;
-                // margin-bottom: 0px;
-            }
-            .property2{
+
+        .course-info-card {
+
+            .property {
                 font-size: 13px;
-                // color: $secondary;
+            }
+
+            .value {
+                font-size: 15px;
+            }
+
+            .property2 {
+                font-size: 13px;
             }
         }
+    }
+
+    // tools-learn
+    .tools-learn {
+        .row {
+            .tool-card {
+                // background: #ddd;
+                background-color: $bg-deep;
+                padding: 6px 14px;
+                border-radius: 4px;
+
+                .tool-icon {
+                    width: 20px;
+                    height: 20px;
+
+                }
+
+                .title {
+                    padding: 0px 10px 0 4px;
+                    font-size: 14px;
+                    margin-left: 2px;
+                }
+            }
+        }
+
+
+    }
+
+    .course-features {
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            /* Adjust spacing between columns */
+
+            .feature-card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8px 18px;
+                text-align: center;
+                border-radius: 8px;
+                width: auto;
+                /* Automatically adjusts to content */
+                white-space: nowrap;
+                /* Prevents text wrapping */
+
+                .icons {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .features {
+                    font-size: 14px;
+                }
+            }
+
+            $colors: $color-v1 $color-v2 $color-v3 $color-v4; // Define your colors
+            $color-count: length($colors); // Get total colors count
+
+            // Loop through feature-card elements and apply colors cyclically
+            @for $i from 1 through 20 {
+
+                // Adjust range if you expect more cards
+                .feature-card:nth-child(#{$i}) {
+                    background: nth($colors, (($i - 1) % $color-count) + 1);
+                }
+            }
+        }
+
+    }
+
+
+}
+
+
+
+@media (max-width: 992px) {
+    .course-info-top {
+        padding: 44px 0;
     }
 }
