@@ -3,70 +3,179 @@
 
 
 
-.footer{
+.footer {
     background-color: $primary;
 
-    .footer-card{
-        .logo{
+    .footer-card {
+        .logo {
             width: 8rem;
             height: auto;
         }
-        .sub-heading{
+
+        .sub-heading {
             color: $white;
         }
-        .footer-link{
+
+        .footer-link {
             margin-top: 1rem;
-            .link{
+
+            .link {
                 color: lighten($color: $primary, $amount: 30);
-                &:hover{
+
+                &:hover {
                     color: $secondary;
                 }
-                i{color: $secondary;}
+
+                i {
+                    color: $secondary;
+                }
             }
         }
 
-        .card-text{
+        .card-text {
             color: darken($color: $light, $amount: 10);
             padding-right: 9rem;
         }
-        .form-control{
+
+        .form-control {
             background-color: lighten($color: $primary, $amount: 7);
             border: 1px solid $primary;
             height: 2.6rem;
             color: $primary;
-            &:focus{
+
+            &:focus {
                 background-color: lighten($color: $primary, $amount: 14);
             }
-            &::placeholder{
+
+            &::placeholder {
                 color: darken($color: $light, $amount: 12);
                 opacity: .5;
             }
         }
-        .btn{height: 2.6rem;}
+
+        .btn {
+            height: 2.6rem;
+        }
     }
 
-    .copy-right{
+    .copy-right {
         color: darken($color: $light, $amount: 10);
         font-size: .875rem;
         font-weight: 400;
     }
-    .brand-name{
+
+    .brand-name {
         color: $secondary;
         font-weight: 500;
     }
 }
 
-.social-media{
-    .social-link{
+.social-media {
+    .social-link {
         margin-left: 1rem;
-        &:first-child{
+
+        &:first-child {
             margin-left: 0;
         }
-        a{
+
+        a {
             color: $secondary;
             transition: .4s;
-            &:hover{
+
+            &:hover {
                 color: lighten($color: $primary, $amount: 16);
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .footer {
+        background-color: $primary;
+
+        .footer-card {
+            .logo {
+                width: 8rem;
+                height: auto;
+            }
+
+            .sub-heading {
+                color: $white;
+            }
+
+            .footer-link {
+                margin-top: 1rem;
+
+                .link {
+                    color: lighten($color: $primary, $amount: 30);
+                    font-size: 13px;
+
+                    &:hover {
+                        color: $secondary;
+                    }
+
+                    i {
+                        color: $secondary;
+                    }
+                }
+            }
+
+            .card-text {
+                color: darken($color: $light, $amount: 10);
+                padding-right: 9rem;
+            }
+
+            .form-control {
+                background-color: lighten($color: $primary, $amount: 7);
+                border: 1px solid $primary;
+                height: 2.6rem;
+                color: $primary;
+
+                &:focus {
+                    background-color: lighten($color: $primary, $amount: 14);
+                }
+
+                &::placeholder {
+                    color: darken($color: $light, $amount: 12);
+                    opacity: .5;
+                }
+            }
+
+            .btn {
+                height: 2.6rem;
+            }
+        }
+
+        .copy-right {
+            color: darken($color: $light, $amount: 10);
+            font-size: 11px;
+            font-weight: 400;
+        }
+
+        .brand-name {
+            color: $secondary;
+            font-weight: 500;
+        }
+    }
+
+    .social-media {
+        .social-link {
+            margin-left: .5rem;
+            font-size: 11px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            a {
+                color: $secondary;
+                transition: .4s;
+
+                &:hover {
+                    color: lighten($color: $primary, $amount: 16);
+                }
             }
         }
     }

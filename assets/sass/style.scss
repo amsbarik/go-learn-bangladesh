@@ -6,58 +6,64 @@
 
 
 
-.top-hero{
-    .top-hero-wrap{
-        .carousel{
-            .slider-img{
+.top-hero {
+    .top-hero-wrap {
+        .carousel {
+            .slider-img {
                 width: 100%;
                 height: 36rem;
                 object-fit: cover;
-                // border-radius: .4rem;
             }
         }
-
-        
     }
-
-    
 }
 
-.top-link{
-    .card{
-        height: 100%; 
+.top-link {
+    .card {
+        height: 100%;
         padding: 1.5rem;
         transition: .4s;
         border: 0;
         transition: background-color .4s ease;
-        .card-img{
+
+        .card-img {
             width: 4rem;
         }
 
     }
 
     .row .col:nth-child(1) .card {
-            background-color: lighten($secondary, 30);
-            
-            &:hover { background-color: lighten($secondary, 24); }
-        }
+        background-color: lighten($secondary, 30);
 
-        .row .col:nth-child(2) .card {
-            background-color: lighten($primary, 54);
-            &:hover { background-color: lighten($primary, 48); }
+        &:hover {
+            background-color: lighten($secondary, 24);
         }
-
-        .row .col:nth-child(3) .card {
-            background-color: lighten($warning, 30);
-            &:hover { background-color: lighten($warning, 24) }
     }
 
-    .banner{
-        img{
+    .row .col:nth-child(2) .card {
+        background-color: lighten($primary, 54);
+
+        &:hover {
+            background-color: lighten($primary, 48);
+        }
+    }
+
+    .row .col:nth-child(3) .card {
+        background-color: lighten($warning, 30);
+
+        &:hover {
+            background-color: lighten($warning, 24)
+        }
+    }
+
+    .banner {
+        img {
             width: 100%;
             height: 176px;
             object-fit: cover;
-        };
+        }
+
+        ;
     }
 
 }
@@ -65,26 +71,28 @@
 
 
 
-.about-us{
+.about-us {
 
-    .about-img{
+    .about-img {
         width: 100%;
         height: 640px;
         object-fit: contain;
     }
 
-    .about-card{
+    .about-card {
         background-color: $bg-deep;
         padding: 1rem 1.4rem;
         border-radius: 8px;
         height: 100%;
+
         // justify-items: center;
-        .about-icon{
+        .about-icon {
             width: 60px;
             height: 60px;
             object-fit: contain;
         }
-        .info-wrap{
+
+        .info-wrap {
             margin-left: 16px;
         }
     }
@@ -92,10 +100,11 @@
 
 
 
-.service-counter{
+.service-counter {
     background-color: $secondary;
+
     // background-color: lighten($color: $secondary, $amount: 20);
-    .row{
+    .row {
         padding: 0 5rem;
     }
 }
@@ -103,7 +112,153 @@
 
 
 
-.testimonial{
+.testimonial {
     background-color: $bg-light;
     padding-bottom: 5rem;
+}
+
+
+@media (max-width: 1400px) {
+    .top-hero {
+        .top-hero-wrap {
+            .carousel {
+                .slider-img {
+                    height: 30rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .top-hero {
+        .top-hero-wrap {
+            .carousel {
+                .slider-img {
+                    height: 24rem;
+                }
+            }
+        }
+    }
+
+    .top-link {
+        .card {
+            .card-img {
+                width: 3rem;
+            }
+        }
+
+
+
+        .banner {
+            img {
+                width: 100%;
+                height: 146px;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+
+}
+
+
+
+@media (max-width: 992px) {
+    .top-hero {
+        .top-hero-wrap {
+            .carousel {
+                .slider-img {
+                    height: 20rem;
+                }
+            }
+        }
+    }
+
+    .top-link {
+        .card {
+            .card-img {
+                width: 3rem;
+            }
+        }
+
+
+
+        .banner {
+            img {
+                width: 100%;
+                height: 146px;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .top-hero {
+        .top-hero-wrap {
+            .carousel {
+                .slider-img {
+                    height: 11rem;
+                }
+            }
+        }
+    }
+
+    .top-link {
+        .card {
+            .card-img {
+                width: 3rem;
+            }
+        }
+
+
+
+        .banner {
+            img {
+                width: 100%;
+                height: 146px;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+
+
+
+    .about-us {
+
+        .about-img {
+            width: 100%;
+            height: 640px;
+            object-fit: contain;
+        }
+
+        .about-card {
+            background-color: $bg-deep;
+            padding:  1rem;
+            border-radius: 8px;
+            height: 100%;
+
+            // justify-items: center;
+            align-items: center;
+            text-align: center;
+            .about-icon {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 14px;
+            }
+
+            .info-wrap {
+                margin-left: 0px;
+            }
+        }
+    }
+
+
 }

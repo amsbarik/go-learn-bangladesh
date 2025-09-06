@@ -1,58 +1,214 @@
-
 @use '../base/index' as *;
 @use '../partials/variables' as *;
 
 
 
-.contact-form{
-
-
-    
-
-
-    
-    form{
+.contact-form {
+    form {
         padding: 0 154px;
         margin-top: 4.6rem;
-        .form-control{
+
+        .form-control {
             padding: 10px 18px 14px 18px;
             border-radius: 0;
+
             // &::placeholder{
             //     color: red;
             // }
-            &:focus{
+            &:focus {
                 color: lighten($color: $dark, $amount: 40);
             }
         }
     }
 }
 
-.contact-info{
-    .contact-info-wrap{
+.contact-info {
+    .contact-info-wrap {
         padding: 0 154px;
-        .contact-card{
+
+        .contact-card {
             // border: 1px solid $dark;
             transition: .4s;
             padding: 32px;
             // border-radius: 10px;
             height: 100%;
             background: $bg-white;
+
             // box-shadow: $shadow-lg;
-            i{
-                margin-bottom: 18px ;
+            i {
+                margin-bottom: 18px;
                 color: $secondary;
                 font-size: 2rem;
-            };
-            &:hover{
+            }
+
+            ;
+
+            &:hover {
                 box-shadow: $shadow-lg;
                 border: none;
+
                 i {
                     animation: shakeRotateFixed 0.6s ease-in-out;
-                    transform-origin: bottom right; /* Fix the rotation around the bottom-left corner */
-                    
+                    transform-origin: bottom right;
+                    /* Fix the rotation around the bottom-left corner */
+
                 }
             }
-            .text{font-size: 18px; margin: 0 !important;}
+
+            .text {
+                font-size: 18px;
+                margin: 0 !important;
+            }
+        }
+    }
+}
+
+
+.map {
+    iframe {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .contact-form {
+        form {
+            padding: 0 64px;
+            margin-top: 4.6rem;
+
+            .form-control {
+                padding: 10px 18px 14px 18px;
+                border-radius: 0;
+
+                // &::placeholder{
+                //     color: red;
+                // }
+                &:focus {
+                    color: lighten($color: $dark, $amount: 40);
+                }
+            }
+        }
+    }
+
+
+
+    .contact-info {
+        .contact-info-wrap {
+            padding: 0 64px;
+
+            .contact-card {
+                // border: 1px solid $dark;
+                transition: .4s;
+                padding: 32px;
+                // border-radius: 10px;
+                height: 100%;
+                background: $bg-white;
+
+                // box-shadow: $shadow-lg;
+                i {
+                    margin-bottom: 18px;
+                    color: $secondary;
+                    font-size: 1.5rem;
+                }
+
+                ;
+
+                &:hover {
+                    box-shadow: $shadow-lg;
+                    border: none;
+
+                    i {
+                        animation: shakeRotateFixed 0.6s ease-in-out;
+                        transform-origin: bottom right;
+                        /* Fix the rotation around the bottom-left corner */
+
+                    }
+                }
+
+                .text {
+                    font-size: 18px;
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+
+    .map {
+        iframe {
+            height: 320px;
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .contact-form {
+        form {
+            padding: 0px;
+            margin-top: 2.6rem;
+
+            .form-control {
+                padding: 4px 12px 8px 12px;
+                border-radius: 0;
+
+                // &::placeholder{
+                //     color: red;
+                // }
+                &:focus {
+                    color: lighten($color: $dark, $amount: 40);
+                }
+            }
+        }
+    }
+
+
+
+    .contact-info {
+        .contact-info-wrap {
+            padding: 0px;
+
+            .contact-card {
+                // border: 1px solid $dark;
+                transition: .4s;
+                padding: 32px;
+                // border-radius: 10px;
+                height: 100%;
+                background: $bg-white;
+
+                // box-shadow: $shadow-lg;
+                i {
+                    margin-bottom: 18px;
+                    color: $secondary;
+                    font-size: 1.5rem;
+                }
+
+                ;
+
+                &:hover {
+                    box-shadow: $shadow-lg;
+                    border: none;
+
+                    i {
+                        animation: shakeRotateFixed 0.6s ease-in-out;
+                        transform-origin: bottom right;
+                        /* Fix the rotation around the bottom-left corner */
+
+                    }
+                }
+
+                .text {
+                    font-size: 18px;
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+
+    .map {
+        iframe {
+            height: 320px;
         }
     }
 }

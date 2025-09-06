@@ -1,5 +1,3 @@
-
-
 @use '../base/index' as *;
 @use '../partials/variables' as *;
 
@@ -9,33 +7,92 @@
     box-shadow: $shadow-lg;
     border: none;
     transition: box-shadow .4 ease;
-    
 
-    .img-wrap{
+
+    .img-wrap {
         padding: 10px;
-        .card-img-top{
+
+        .card-img-top {
             border-radius: 8px;
             height: 220px;
             object-fit: cover;
         }
     }
-    .card-body{
+
+    .card-body {
         padding: 1.5rem;
         padding-top: 1rem;
-        .seats{color: $secondary;}
-        .fee{
+
+        .seats {
+            color: $secondary;
+        }
+
+        .fee {
             color: $primary;
         }
 
-        .topics{
-            .card-text{
-                i{color: $secondary;}
+        .topics {
+            .card-text {
+                i {
+                    color: $secondary;
+                }
+
                 // font-size: .875rem;
             }
         }
     }
 
-    &:hover{
+    &:hover {
         box-shadow: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .workshop-card {
+        height: 100%;
+        box-shadow: $shadow-lg;
+        border: none;
+        transition: box-shadow .4 ease;
+
+
+        .img-wrap {
+            padding: 10px;
+
+            .card-img-top {
+                border-radius: 8px;
+                height: 220px;
+                object-fit: cover;
+            }
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            padding-top: 1rem;
+
+            .seats {
+                color: $secondary;
+                font-size: 12px;
+            }
+
+            .fee {
+                color: $primary;
+                font-size: 16px;
+            }
+
+            .topics {
+                .card-text {
+                    i {
+                        color: $secondary;
+                    }
+
+                    // font-size: .875rem;
+                }
+            }
+        }
+
+        &:hover {
+            box-shadow: none;
+        }
     }
 }

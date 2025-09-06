@@ -1,0 +1,74 @@
+
+
+@use '../base/index' as *;
+@use '../partials/variables' as *;
+
+
+:root{
+        --gap: 1rem;            /* spacing between logos */
+        --auto-speed: 0.035;    /* px per ms (≈35px/sec) - adjust autoplay speed */
+        --min-momentum: 0.001;  /* minimum velocity (px/ms) to consider */
+    }
+
+    /* container */
+    .marketplaces {
+        padding: 1.25rem 0;
+    }
+
+
+    .marketplaces-slider {
+        overflow: hidden;
+        width: 100%;
+        user-select: none;
+    }
+
+    /* the moving track */
+    .marketplaces-track {
+        display: flex;
+        gap: var(--gap);
+        align-items: center;
+        will-change: transform;
+        touch-action: pan-y;
+        transform: translate3d(0,0,0);
+    }
+
+    /* marketplace item - default (small screens: 3 logos) */
+    .marketplace-item {
+        flex: 0 0 calc((100% - (2 * var(--gap))) / 3);
+        box-sizing: border-box;
+    }
+
+    /* md: 4 logos */
+    @media (min-width: 768px) {
+        .marketplace-item {
+        flex: 0 0 calc((100% - (3 * var(--gap))) / 4);
+        }
+    }
+
+    /* lg: 6 logos */
+    @media (min-width: 992px) {
+        .marketplace-item {
+        flex: 0 0 calc((100% - (5 * var(--gap))) / 6);
+        }
+    }
+
+    .marketplace-logo {
+        width: 100%;
+        height: auto;
+        display: block;
+        pointer-events: none;
+        -webkit-user-drag: none;
+    }
+
+    /* cursor feedback */
+    .marketplaces-slider { cursor: grab; }
+    .marketplaces-slider.dragging { cursor: grabbing; }
+
+    /* optional: scale on hover */
+    .marketplace-item:hover .marketplace-logo { transform: scale(1.05); transition: transform .18s ease; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .marketplaces-track { transition: none; animation: none !important; }
+    }
+
+    
