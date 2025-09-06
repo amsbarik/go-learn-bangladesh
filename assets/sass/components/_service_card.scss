@@ -1,0 +1,22 @@
+
+@use '../base/index' as *;
+@use '../partials/variables' as *;
+
+
+
+.service-card{
+    // border: 1px solid #e2e2e2;
+    border-bottom: 6px solid $primary;
+    box-shadow: $shadow-lg;
+    padding: 34px;
+    transition: border-bottom .4s ease;
+    .service-icon{
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+    }
+
+    &:hover{
+        border-bottom: 6px solid $secondary;
+    }
+}
