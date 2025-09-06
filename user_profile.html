@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap cdn css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- font-awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap css link -->
+    <!-- <link rel="stylesheet" href="./assets/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+
+    <title>Home</title>
+
+
+
+</head>
+
+<body>
+
+
+    <!-- main header start  -->
+    <header>
+        <!-- top-info start  -->
+        <div class="top-info d-none p-1">
+            <div class="container">
+                <div class="top-info-wrap d-flex justify-content-between">
+                    <div class="scroll-container">
+                        <p class="scroll-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sequi
+                            eveniet porro maxime doloribus impedit nesciunt ad repellendus ut itaque commodi voluptas,
+                            quaerat rerum architecto! Id facilis tenetur voluptatem quia ratione, similique doloremque!
+                            Exercitationem quasi pariatur laboriosam tenetur aliquam sequi? Non cumque reiciendis
+                            consequuntur omnis iste dolorem temporibus cupiditate fugit.</p>
+                    </div>
+
+                    <div class="contact">
+                        <i class="fa-brands fa-whatsapp me-1"></i> +880 1717 XXX XXX
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- main nav start  -->
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <div class="container ">
+                <a class="navbar-brand fw-semibold" href="index.html">
+                    <!-- <img src="assets/img/logo.png" class="header-logo" alt=""> -->
+                    <span class="text-secondary">GoLearn</span>Bangladesh
+                </a>
+
+                <!-- search-form  -->
+                <!-- <form class="search-form flex-grow-1" role="search">
+                    <div class="input-group">
+                        <input type="search" class="form-control bg-ligh" placeholder="Search your university" aria-label="Search">
+                        <button class="input-group-text search-btn" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form> -->
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+
+
+
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="courses.html">Courses</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="workshop.html">Workshop</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">Banking Course</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="events.html">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blogs.html">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="about.html">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="return_policy.html">Return Policy</a>
+                            </li>
+
+                            <li class="nav-item ms-4">
+                                <a class="nav-link btn btn-primary px-4 btn-sm rounded-pill"
+                                    href="signin.html">Login</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- main nav end -->
+
+
+    </header>
+    <!-- main header end  -->
+
+    <!-- main content start -->
+    <main>
+
+        <!--user Sidebar start-->
+        <nav id="sidebarMenu" class=" d-lg-block sidebar collapse">
+            <div class="position-sticky">
+                <div class="list-group list-group-flush  mt-4">
+                    <div>
+                        <div class="user-photo mx-auto text-center mt-4 p-3">
+                            <img src="assets/img/team/team1.jpg" class="img-fluid rounded-circle object-fit-cover" alt="">
+                            <h5 class="text-center mt-3">Mr Jhon</h5>
+                            <p class="text-center"><small>username</small></p>
+
+                        </div>
+                    </div>
+                    <hr class="text-light m-0 mt-4 p-0">
+
+                    <a href="userProfile.html" class="nav-item  py-2 mt-3 "><i
+                            class="fa-solid fa-chart-line   me-3"></i><span>My Course</span></a>
+                    <a href="myOrders.html" class=" nav-item  py-2 "><i
+                            class="fa-solid fa-clock-rotate-left me-3"></i><span>Payment History</span></a>
+                    <a href="myWishlist.html" class=" nav-item  py-2 "><i class="fa-solid fa-video me-3"></i><span>Recorded Videos</span></a>
+                    <a href="myWishlist.html" class=" nav-item  py-2 "><i class="fa-solid fa-microscope me-3"></i><span> Class Materials</span></a>
+                    <a href="profileSetting.html" class=" nav-item  py-2 active"><i
+                            class="fa-regular fa-circle-user me-3"></i><span>My Setting</span></a>
+                    <a href="index.html" class=" nav-item  py-2 "><i
+                            class="fa-solid fa-power-off me-3"></i><span>Logout</span></a>
+                </div>
+            </div>
+        </nav>
+        <!--user Sidebar end-->
+
+        <section class="user-profile profile-setting">
+            <div class="container">
+                <div class="profile-wrap">
+                    <div class="user-setting">
+                        <h3>My Profile</h3>
+                        <div class="profile-detail">
+                            <div class="row row-cols-1 row-cols-md-2 g-4 g-md-5 mt-1">
+                                <div class="col">
+                                    <form action="">
+                                        <img src="assets/img/team/team1.jpg" class="img-fluid rounded object-fit-cover"
+                                            alt="" style="width: 18rem; height: 18rem;">
+                                        <div class="mb-3 row ">
+                                            <div class="col">
+                                                <label for="upload"
+                                                    class="form-label bg-white text-center py-2 mt-3 rounded"
+                                                    style="width: 18rem;"><i
+                                                        class="fa-solid fa-upload me-3"></i>Upload Photo</label>
+                                                <input style="display: none;" type="file" class="form-control"
+                                                    id="upload" placeholder="" aria-describedby="uploadHelp">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row ">
+                                            <div class="col">
+                                                <label for="your-name" class="form-label">Your Name<span
+                                                        class="required text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="your-name"
+                                                    placeholder="Your name" aria-describedby="nameHelp" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <div class="col">
+                                                <label for="y-mobile" class="form-label">Mobile<span
+                                                        class="required text-danger">*</span></label>
+                                                <input type="number" class="form-control" id="y-mobile"
+                                                    placeholder="Mobile Number" aria-describedby="mobileHelp"
+                                                    required>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <div class="col">
+                                                <label for="y-mail" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="y-mail"
+                                                    placeholder="Mail Address" aria-describedby="mailHelp">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <div class="col">
+                                                <label for="y-address" class="form-label">Address</label>
+                                                <input type="text" class="form-control" id="y-address"
+                                                    placeholder="Your Address" aria-describedby="addressHelp">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 mb-md-4 row ">
+                                            <div class="col">
+                                                <label for="your-city" class="form-label">City</label>
+                                                <select class="form-select" aria-label="Default select"
+                                                    id="your-city">
+                                                    <option selected>Select</option>
+                                                    <option value="1">Dhaka</option>
+                                                    <option value="2">New Delhi</option>
+                                                    <option value="3">Chattogram</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <label for="your-country" class="form-label">Country</label>
+                                                <select class="form-select" aria-label="Default select"
+                                                    id="your-country">
+                                                    <option selected>Select</option>
+                                                    <option value="2">India</option>
+                                                    <option value="1">Bangladesh</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">Save</button>
+
+                                    </form>
+                                    
+                                </div>
+
+                                <!-- Change Password  -->
+                                <div class="col">
+                                    <h5>Change Password</h5>
+                                    <form action="" class="mt-4">
+                                        <div class="mb-3 row">
+                                            <div class="col">
+                                                <label for="current-pass" class="form-label">Current Password<span
+                                                        class="required text-danger">*</span></label>
+                                                <input type="password" class="form-control" id="current-pass"
+                                                    aria-describedby="passHelp" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 row">
+                                            <div class="col">
+                                                <label for="new-pass" class="form-label">New Password<span
+                                                        class="required text-danger">*</span></label>
+                                                <input type="password" class="form-control" id="new-pass"
+                                                    aria-describedby="passHelp" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3 mb-md-4 row">
+                                            <div class="col">
+                                                <label for="confirm-pass" class="form-label">Confirm New Password<span
+                                                        class="required text-danger">*</span></label>
+                                                <input type="password" class="form-control" id="confirm-pass"
+                                                    aria-describedby="passHelp" required>
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main content end -->
+
+ 
+
+
+
+    <!-- bootstrap cdn js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap js link -->
+    <!-- <script src="./assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- custom js link -->
+    <script src="./assets/js/main.js"></script>
+
+
+
+
+
+</body>
+
+</html>
